@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kosmetik Saydam</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="topbar">
+      <h1><a href="index.html">Kosmetik Saydam</a></h1>
+      <nav>
+        <button class="nav-toggle" aria-label="Menü öffnen"><i class="fas fa-bars"></i></button>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="leistungen.html">LEISTUNGEN & PREISE</a></li>
+          <li><a href="angebote.html">ANGEBOTE</a></li>
+          <li><a href="kontakt.php">ONLINE BUCHEN</a></li>
+        </ul>
+      </nav>
+      <div class="socials">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+
+    <div class="hero">
+      <div class="hero-text">
+        <h2>Leistungen & Preise</h2>
+        <p>bei Kosmetik Saydam</p>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="section" style="min-height: 80vh; background: #f9f6ef;">
+      <div class="preise-tabellen">
+        <h3>Kosmetik</h3>
+        <table class="preise-tabelle">
+          <tr><th>Behandlung</th><th>Preis</th></tr>
+          <tr><td>Gesichtsbehandlung Classic</td><td>49 €</td></tr>
+          <tr><td>Anti-Aging Behandlung</td><td>65 €</td></tr>
+          <tr><td>Intensive Feuchtigkeit</td><td>59 €</td></tr>
+        </table>
+
+        <h3>Med. Fusspflege</h3>
+        <table class="preise-tabelle">
+          <tr><th>Behandlung</th><th>Preis</th></tr>
+          <tr><td>Basis Fusspflege</td><td>35 €</td></tr>
+          <tr><td>Fusspflege mit Lack</td><td>40 €</td></tr>
+          <tr><td>Fusspflege inkl. Fußbad</td><td>45 €</td></tr>
+        </table>
+
+        <h3>Microblading</h3>
+        <table class="preise-tabelle">
+          <tr><th>Behandlung</th><th>Preis</th></tr>
+          <tr><td>Augenbrauen Microblading</td><td>250 €</td></tr>
+          <tr><td>Nachbehandlung</td><td>80 €</td></tr>
+        </table>
+
+        <h3>Waxing</h3>
+        <table class="preise-tabelle">
+          <tr><th>Bereich</th><th>Preis</th></tr>
+          <tr><td>Beine komplett</td><td>39 €</td></tr>
+          <tr><td>Achseln</td><td>15 €</td></tr>
+          <tr><td>Oberlippe</td><td>8 €</td></tr>
+        </table>
+
+        <h3>Microdermabrasion</h3>
+        <table class="preise-tabelle">
+          <tr><th>Behandlung</th><th>Preis</th></tr>
+          <tr><td>Gesicht</td><td>69 €</td></tr>
+          <tr><td>Gesicht & Hals</td><td>79 €</td></tr>
+        </table>
+
+        <h3>Fußreflexionsmassage</h3>
+        <table class="preise-tabelle">
+          <tr><th>Dauer</th><th>Preis</th></tr>
+          <tr><td>30 Minuten</td><td>29 €</td></tr>
+          <tr><td>45 Minuten</td><td>39 €</td></tr>
+        </table>
+
+        <h3>Permanent Make-Up</h3>
+        <table class="preise-tabelle">
+          <tr><th>Bereich</th><th>Preis</th></tr>
+          <tr><td>Augenbrauen</td><td>290 €</td></tr>
+          <tr><td>Lidstrich oben</td><td>180 €</td></tr>
+          <tr><td>Lippen</td><td>350 €</td></tr>
+        </table>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="footer-main">
+      <p>
+        &copy; 2025 Kosmetik Saydam – Alle Rechte vorbehalten
+      </p>
+      <p class="footer-dev">
+        Entwicklung: <a href="https://dein-portfolio-link.de" target="_blank" rel="noopener" title="Portfolio Ugur Hallaclioglu">Ugur Hallaclioglu</a>
+      </p>
+    </div>
+  </footer>
+  <script>
+    // Mobile Navigation Toggle
+    document.querySelector('.nav-toggle').addEventListener('click', function() {
+      document.querySelector('nav ul').classList.toggle('open');
+    });
+  </script>  
+</body>
+</html>
