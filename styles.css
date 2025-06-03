@@ -107,14 +107,42 @@ nav ul li a:focus {
 }
 
 .hero {
+  position: relative;
+  min-height: 220px;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 45vh;
   background: var(--secondary);
   text-align: center;
   padding: 3rem 1rem 2rem 1rem;
+  overflow: visible;
+}
+
+.hero-text {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-deco {
+  position: absolute;
+  top: 50%;
+  width: 640px;         /* was 420px, now bigger */
+  max-width: 90vw;      /* was 62vw, now bigger */
+  pointer-events: none;
+  user-select: none;
+  opacity: 0.85;
+  z-index: 1;
+  transform: translateY(-50%);
+}
+
+.hero-deco-left {
+  left: -180px;      /* nach links außerhalb der hero-text, ggf. anpassen */
+  transform: translateY(-50%) rotate(-10deg);
+}
+
+.hero-deco-right {
+  right: -180px;     /* nach rechts außerhalb der hero-text, ggf. anpassen */
+  transform: translateY(-50%) rotate(10deg) scaleX(-1);
 }
 
 .hero-text h2 {
@@ -520,6 +548,34 @@ footer {
 }
 @keyframes footerFadeIn {
   to { opacity: 1; }
+}
+
+/* Fensterdekoration */
+.window-deco {
+  position: fixed;
+  top: 32vh; /* oder z.B. top: 50%; */
+  width: 540px;         /* was 420px, jetzt größer */
+  max-width: 80vw;      /* war 62vw, jetzt größer */
+  pointer-events: none;
+  user-select: none;
+  opacity: 0.85;
+  z-index: 100;
+  /* zentriert auf der Höhe */
+  transform: translateY(-50%);
+}
+
+.window-deco-left {
+  left: 0;
+  transform: translateY(-50%) rotate(-10deg);
+}
+
+.window-deco-right {
+  right: 0;
+  transform: translateY(-50%) rotate(10deg) scaleX();
+}
+
+@media (max-width: 700px) {
+  .window-deco { display: none; }
 }
 
 /* Responsive Styles */
